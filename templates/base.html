@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#131219">
+    <meta name="description" content="Rahul Choudhary — software engineering, projects and competitive programming.">
+    <title>{% block title %}Rahul Choudhary{% endblock %} · Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="site-wrap">
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="site-mark" href="{{ url_for('home') }}" aria-label="Rahul Choudhary home">rahul<span>.</span></a>
+
+                <nav class="desktop-nav" aria-label="Main navigation">
+                    <a class="{% if request.endpoint == 'home' %}active{% endif %}" href="{{ url_for('home') }}">Home</a>
+                    <a class="{% if request.endpoint == 'about' %}active{% endif %}" href="{{ url_for('about') }}">About</a>
+                    <a class="{% if request.endpoint == 'projects' %}active{% endif %}" href="{{ url_for('projects') }}">Projects</a>
+                    <a class="{% if request.endpoint == 'experience' %}active{% endif %}" href="{{ url_for('experience') }}">Experience</a>
+                    <a class="{% if request.endpoint == 'resume' %}active{% endif %}" href="{{ url_for('resume') }}">Résumé</a>
+                </nav>
+
+                <a href="{{ url_for('contact_page') }}" class="header-contact {% if request.endpoint == 'contact_page' %}active{% endif %}">Let's talk <span aria-hidden="true">↗</span></a>
+
+                <details class="mobile-menu">
+                    <summary aria-label="Open navigation">Menu <span aria-hidden="true">☰</span></summary>
+                    <nav aria-label="Mobile navigation">
+                        <a href="{{ url_for('home') }}">Home</a>
+                        <a href="{{ url_for('about') }}">About</a>
+                        <a href="{{ url_for('projects') }}">Projects</a>
+                        <a href="{{ url_for('experience') }}">Experience</a>
+                        <a href="{{ url_for('resume') }}">Résumé</a>
+                        <a href="{{ url_for('contact_page') }}">Contact</a>
+                    </nav>
+                </details>
+            </div>
+        </header>
+
+        <main id="main-content">
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <span>Rahul Choudhary</span>
+                <span class="footer-divider" aria-hidden="true">·</span>
+                <span>Jaipur, India</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</body>
+</html>

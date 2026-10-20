@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Résumé{% endblock %}
+{% block content %}
+<section class="page-intro container">
+    <p class="eyebrow light">MY RÉSUMÉ</p>
+    <h1>A closer look at <em>my work.</em></h1>
+    <p>A brief overview of my background. My updated résumé PDF will be available here soon.</p>
+</section>
+
+<section class="resume-layout container">
+    <div class="resume-text">
+        <span class="card-kicker">RAHUL CHOUDHARY</span>
+        <h2>Software engineering.<br><span>Continuous learning.</span></h2>
+        <p>Currently pursuing a B.Tech in Electronics & Communication Engineering at Swami Keshvanand Institute of Technology, Jaipur (2023–2027).</p>
+        <p>Interested in software development, C++, algorithms, performance and building practical web projects.</p>
+        <div class="resume-facts">
+            <span>400+ DSA problems</span><span>1711 CodeChef rating</span><span>CGPA 8.3</span>
+        </div>
+        <span class="resume-unavailable">RÉSUMÉ PDF COMING SOON</span>
+        <a class="text-link" href="{{ url_for('contact_page') }}">Contact me ↗</a>
+    </div>
+    <div class="resume-illustration" aria-hidden="true"><div class="paper"><span>RAHUL CHOUDHARY</span><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i></div></div>
+</section>
+{% endblock %}

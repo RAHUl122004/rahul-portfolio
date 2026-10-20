@@ -1,7 +1,8 @@
 __pycache__/
 *.pyc
+.pytest_cache/
 .env
 .venv/
-messages.db
-*.sqlite3
-.pytest_cache/
+venv/
+*.db
+.DS_Store

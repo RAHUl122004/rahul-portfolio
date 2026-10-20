@@ -1,37 +1,36 @@
-const form = document.getElementById("contactForm");
-const statusText = document.getElementById("formStatus");
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
 
-if (form && statusText) {
-    form.addEventListener("submit", async (event) => {
+if (contactForm && formStatus) {
+    contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
-        const button = form.querySelector('button[type="submit"]');
-        button.disabled = true;
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
 
-        statusText.textContent = "Sending your message...";
-        statusText.classList.remove("form-success", "form-error");
+        formStatus.textContent = "Sending your message...";
+        formStatus.classList.remove("form-success", "form-error");
 
         try {
-            const response = await fetch(form.action, {
+            const response = await fetch(contactForm.action, {
                 method: "POST",
-                body: new FormData(form)
+                body: new FormData(contactForm)
             });
 
             const result = await response.json();
 
-            statusText.textContent = result.message || result.error;
-            statusText.classList.toggle("form-success", response.ok);
-            statusText.classList.toggle("form-error", !response.ok);
+            formStatus.textContent = result.message || result.error || "Please try again.";
+            formStatus.classList.toggle("form-success", response.ok);
+            formStatus.classList.toggle("form-error", !response.ok);
 
             if (response.ok) {
-                form.reset();
+                contactForm.reset();
             }
         } catch (error) {
-            statusText.textContent = "Could not send your message. Please try again.";
-            statusText.classList.remove("form-success");
-            statusText.classList.add("form-error");
+            formStatus.textContent = "Unable to send right now. Please try again or email me directly.";
+            formStatus.classList.add("form-error");
         } finally {
-            button.disabled = false;
+            submitButton.disabled = false;
         }
     });
 }

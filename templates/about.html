@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="page-intro container">
+    <p class="eyebrow light">GET TO KNOW ME</p>
+    <h1>A little more <em>about me.</em></h1>
+    <p>Software, curiosity, and the satisfaction of turning an idea into something that actually works.</p>
+</section>
+
+<section class="inner-grid container">
+    <div class="story-panel">
+        <h2>Curiosity first.<br><span>Progress always.</span></h2>
+        <p>At Swami Keshvanand Institute of Technology in Jaipur, I keep returning to a simple question: can I make this faster, clearer or more useful?</p>
+        <p>That curiosity has led me from algorithmic problems to building a C++ order book, designing databases and creating my own portfolio. I like experimenting, learning the fundamentals and refining an idea until it feels right.</p>
+        <p>Outside the classroom, I enjoy competitive programming and badminton. Both have taught me patience, consistency and how much progress comes from practice.</p>
+    </div>
+    <div class="aside-stack">
+        <div class="info-card">
+            <p class="card-kicker">EDUCATION · 2023—2027</p>
+            <h3>Swami Keshvanand Institute of Technology</h3>
+            <p>B.Tech · Electronics & Communication Engineering</p>
+            <div class="info-row"><span>Location</span><strong>Jaipur, India</strong></div>
+            <div class="info-row"><span>CGPA</span><strong>8.3</strong></div>
+        </div>
+        <div class="info-card">
+            <p class="card-kicker">MY TOOLBOX</p>
+            <div class="skill-list">
+                <span>C++</span><span>Python</span><span>SQL</span><span>HTML</span>
+                <span>CSS</span><span>JavaScript</span><span>Git & GitHub</span><span>Flask</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container page-bottom-banner">
+    <div><p class="card-kicker">WHAT MOTIVATES ME</p><h2>Get better at the craft, one project at a time.</h2></div>
+    <a class="button button-primary" href="{{ url_for('projects') }}">My projects ↗</a>
+</section>
+{% endblock %}
