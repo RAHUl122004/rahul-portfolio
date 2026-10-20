@@ -1444,3 +1444,36 @@ button, a, input, textarea, summary {
         animation-duration: .01ms !important;
     }
 }
+
+
+.resume-document {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    transition: border-color .2s ease, transform .2s ease;
+}
+
+.resume-document:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.resume-document img {
+    display: block;
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 700px) {
+    .resume-document {
+        padding: 16px;
+    }
+
+    .resume-document img {
+        max-width: 300px;
+    }
+}

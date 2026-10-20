@@ -4,7 +4,7 @@
 <section class="page-intro container">
     <p class="eyebrow light">MY RÉSUMÉ</p>
     <h1>A closer look at <em>my work.</em></h1>
-    <p>A brief overview of my background. My updated résumé PDF will be available here soon.</p>
+    <p>My education, technical skills, projects, experience, and achievements in one place.</p>
 </section>
 
 <section class="resume-layout container">
@@ -13,12 +13,21 @@
         <h2>Software engineering.<br><span>Continuous learning.</span></h2>
         <p>Currently pursuing a B.Tech in Electronics & Communication Engineering at Swami Keshvanand Institute of Technology, Jaipur (2023–2027).</p>
         <p>Interested in software development, C++, algorithms, performance and building practical web projects.</p>
+
         <div class="resume-facts">
-            <span>400+ DSA problems</span><span>1711 CodeChef rating</span><span>CGPA 8.3</span>
+            <span>400+ DSA problems</span>
+            <span>1711 CodeChef rating</span>
+            <span>CGPA 8.3</span>
         </div>
-        <span class="resume-unavailable">RÉSUMÉ PDF COMING SOON</span>
-        <a class="text-link" href="{{ url_for('contact_page') }}">Contact me ↗</a>
+
+        <div class="action-row">
+            <a class="button button-primary" href="{{ url_for('static', filename='assets/rahul-choudhary-resume.pdf') }}" target="_blank" rel="noopener noreferrer">View résumé <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="{{ url_for('static', filename='assets/rahul-choudhary-resume.pdf') }}" download="Rahul_Choudhary_Resume.pdf">Download PDF <span aria-hidden="true">↓</span></a>
+        </div>
     </div>
-    <div class="resume-illustration" aria-hidden="true"><div class="paper"><span>RAHUL CHOUDHARY</span><i></i><i></i><b></b><i></i><i></i><b></b><i></i><i></i></div></div>
+
+    <a class="resume-illustration resume-document" href="{{ url_for('static', filename='assets/rahul-choudhary-resume.pdf') }}" target="_blank" rel="noopener noreferrer" aria-label="View Rahul Choudhary résumé PDF">
+        <img src="{{ url_for('static', filename='assets/resume-preview.png') }}" alt="Preview of Rahul Choudhary résumé" loading="lazy">
+    </a>
 </section>
 {% endblock %}
