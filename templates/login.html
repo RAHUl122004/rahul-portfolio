@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>
+            Private Inbox · Rahul
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body class="admin-body">
+        <main class="admin-panel">
+            <a href="/">
+                ← Back to portfolio
+            </a>
+            <p class="mini-label">
+                PRIVATE AREA
+            </p>
+            <h1>
+                Message inbox
+            </h1>
+            <p>
+                Enter your admin password to view saved messages.
+            </p>
+            {% for message in get_flashed_messages() %}
+            <p class="login-error">
+                {{ message }}
+            </p>
+            {% endfor %}
+            <form action="/admin/login" method="post">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <label>
+                    Password
+                    <input type="password" name="password" required autocomplete="current-password" autofocus>
+                </label>
+                <button class="btn btn-primary" type="submit">Log in </button>
+            </form>
+        </main>
+    </body>
+</html>

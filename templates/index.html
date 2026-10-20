@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Rahul Choudhary — engineering student and aspiring software engineer from Jaipur, India.">
+        <title>
+            Rahul Choudhary · Personal Portfolio
+        </title>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="#home">
+                    Home
+                </a>
+                <a href="#about">
+                    About
+                </a>
+                <a href="#projects">
+                    Projects
+                </a>
+                <a href="#experience">
+                    Experience
+                </a>
+                <a href="#resume">
+                    Résumé
+                </a>
+                <a href="#contact">
+                    Contact
+                </a>
+            </nav>
+            <details class="mobile-nav">
+                <summary>
+                    Menu <span aria-hidden="true">☰</span>
+                </summary>
+                <nav aria-label="Mobile navigation">
+                    <a href="#home">
+                        Home
+                    </a>
+                    <a href="#about">
+                        About
+                    </a>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                    <a href="#experience">
+                        Experience
+                    </a>
+                    <a href="#resume">
+                        Résumé
+                    </a>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </nav>
+            </details>
+        </header>
+        <main>
+            <section class="hero-shell" id="home" aria-label="Introduction">
+                <div class="hero-copy">
+                    <span class="open-to-work">2027 GRADUATE · JAIPUR, RAJASTHAN</span>
+                    <h1>
+                        Hi, I'm <strong>Rahul</strong><span class="cursor" aria-hidden="true">|</span>
+                    </h1>
+                    <p class="hero-role">
+                        Software engineering student
+                    </p>
+                    <p class="hero-tagline">
+                        Building things. Solving problems.<br><em>Always learning.</em>
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button-primary" href="#projects">
+                            View my work
+                        </a>
+                        <a class="button-quiet" href="#contact">
+                            Get in touch
+                        </a>
+                    </div>
+                    <nav class="profile-links" aria-label="Coding and professional profiles">
+                        <a class="social-link" href="https://linkedin.com/in/rahul-choudhary-26045029b" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn">
+                            <span class="social-circle" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6Z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            </span><span class="social-label">LinkedIn</span>
+                        </a>
+                        <a class="social-link" href="https://github.com/RAHUl122004" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub">
+                            <span class="social-circle" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3"/>
+                                <path d="M15 22v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 19 4.77 5.07 5.07 0 0 0 18.91 1S17.73.65 15 2.57a13.38 13.38 0 0 0-7 0C5.27.65 4.09 1 4.09 1A5.07 5.07 0 0 0 4 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 18.13V22"/>
+                            </svg>
+                            </span><span class="social-label">GitHub</span>
+                        </a>
+                        <a class="social-link" href="https://www.codechef.com/users/rahul_somra" target="_blank" rel="noopener noreferrer" aria-label="CodeChef coding profile" title="CodeChef">
+                            <span class="social-circle social-letters" aria-hidden="true">CC</span><span class="social-label">CodeChef</span>
+                        </a>
+                        <a class="social-link" href="https://leetcode.com/u/rahul1204/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode coding profile" title="LeetCode">
+                            <span class="social-circle social-letters" aria-hidden="true">LC</span><span class="social-label">LeetCode</span>
+                        </a>
+                        <a class="social-link" href="mailto:somra.rahul1204@gmail.com" aria-label="Email via Gmail" title="Gmail">
+                            <span class="social-circle" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2.5" y="5" width="19" height="14" rx="2"/>
+                                <path d="m3.5 7 8.5 6.5L20.5 7"/>
+                            </svg>
+                            </span><span class="social-label">Gmail</span>
+                        </a>
+                    </nav>
+                </div>
+                <div class="hero-image-panel">
+                    <div class="circle-photo-wrap">
+                        <img class="hero-photo" src="{{ url_for('static', filename='assets/rahul-photo.jpg') }}" alt="Rahul Choudhary outdoors" />
+                    </div>
+                </div>
+            </section>
+            <section class="welcome" id="about">
+                <div class="welcome-heading">
+                    <div class="welcome-intro">
+                        <span class="fine-rule" aria-hidden="true"></span><span class="welcome-lettering">Welcome</span><span class="fine-rule" aria-hidden="true"></span>
+                    </div>
+                    <p>
+                        Curiosity is what keeps me interested in software. I like taking an idea, breaking it down, and asking how it can become <em>faster</em>, <em>cleaner</em>, or <em>more useful</em>. That mindset has shaped the way I built my C++ order book, approached database design, and created this portfolio.
+                    </p>
+                </div>
+                <div class="milestones" aria-label="Personal achievements">
+                    <div class="milestone-offer">
+                        <div class="milestone-heading">
+                            <span class="milestone-dot"></span><strong>Infosys Specialist Programmer</strong>
+                        </div>
+                        <p>
+                            Earned an offer through HackWithInfy, placing among the <strong>top 6 selected from approximately 700 students</strong> at my college.
+                        </p>
+                    </div>
+                    <div class="milestone-numbers" aria-label="Competitive programming milestones">
+                        <div>
+                            <strong>1711</strong><span>CodeChef rating</span>
+                        </div>
+                        <div>
+                            <strong>400+</strong><span>DSA problems solved</span>
+                        </div>
+                        <div>
+                            <strong>3★</strong><span>CodeChef</span>
+                        </div>
+                    </div>
+                    <div class="milestone-assessment">
+                        <span>ONLINE ASSESSMENTS</span><strong>HRT GCA: 600/600 <i>·</i> SIG OA: 566/600</strong>
+                    </div>
+                </div>
+            </section>
+            <section class="section-block about-section" aria-label="Education and interests">
+                <div class="about-grid">
+                    <div>
+                        <p class="section-kicker light">
+                            MY BACKGROUND
+                        </p>
+                        <h2>
+                            Curiosity first.<br><em>Progress always.</em>
+                        </h2>
+                        <p>
+                            I like starting with the basics, finding a practical way to solve a problem, and improving it one iteration at a time. Right now, I'm focused on DSA, Python, and creating approachable web experiences.
+                        </p>
+                    </div>
+                    <div class="education-details">
+                        <span>EDUCATION · 2023–2027</span>
+                        <h3>
+                            Swami Keshvanand Institute of Technology
+                        </h3>
+                        <p>
+                            B.Tech in Electronics & Communication Engineering
+                        </p>
+                        <div class="education-foot">
+                            <span>Jaipur, Rajasthan, India</span><strong>CGPA 8.3</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-block projects-section" id="projects">
+                <div class="section-heading">
+                    <p class="section-kicker light">
+                        SELECTED WORK
+                    </p>
+                    <h2>
+                        Things I've built.
+                    </h2>
+                    <p>
+                        Projects that helped me explore performance, data, and product development.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project">
+                        <div class="project-art art-code" aria-hidden="true">
+                            <span>order.match()</span><i></i><i></i><i></i>
+                        </div>
+                        <span class="project-no">01 / C++</span>
+                        <h3>
+                            Low Latency Order Book
+                        </h3>
+                        <p>
+                            A price-time priority matching engine supporting orders, partial fills, and cancellations, with attention to efficient data structures.
+                        </p>
+                        <a href="https://github.com/RAHUl122004/LowLatencyOrderBook" target="_blank" rel="noopener noreferrer">
+                            Explore repository
+                        </a>
+                    </article>
+                    <article class="project">
+                        <div class="project-art art-data" aria-hidden="true">
+                            <span>PLAYERS</span><span>MATCHES</span><span>RESULTS</span>
+                        </div>
+                        <span class="project-no">02 / SQL</span>
+                        <h3>
+                            Badminton Tournament Database
+                        </h3>
+                        <p>
+                            Designed a relational database for tournament information, players, matches, and related queries.
+                        </p>
+                        <a href="https://github.com/RAHUl122004/Regional-Badminton-Tournament-DBMS" target="_blank" rel="noopener noreferrer">
+                            Explore repository
+                        </a>
+                    </article>
+                    <article class="project">
+                        <div class="project-art art-web" aria-hidden="true">
+                            <span class="browser-top">● ● ●</span><span class="browser-lines"></span><span class="browser-button"></span>
+                        </div>
+                        <span class="project-no">03 / FULL STACK</span>
+                        <h3>
+                            This portfolio
+                        </h3>
+                        <p>
+                            My personal website, built with HTML, CSS, simple JavaScript, and a Flask contact form with Formspree email delivery.
+                        </p>
+                        <a href="#contact">
+                            Try the contact form
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="section-block experience-section" id="experience">
+                <div class="section-heading">
+                    <p class="section-kicker light">
+                        EXPERIENCE
+                    </p>
+                    <h2>
+                        Learning by doing.
+                    </h2>
+                </div>
+                <div class="timeline">
+                    <article>
+                        <time>2026 — Present</time>
+                        <div>
+                            <h3>
+                                AI Generalist · Outlier AI
+                            </h3>
+                            <p>
+                                Freelance work reviewing AI responses for accuracy, relevance, and instruction-following.
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <time>Jun–Jul 2025</time>
+                        <div>
+                            <h3>
+                                Web Development Intern · LinkX Digital
+                            </h3>
+                            <p>
+                                Worked with HTML, CSS, JavaScript, and MySQL while building practical web pages.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="resume-band" id="resume">
+                <div class="resume-copy">
+                    <span class="section-kicker">RÉSUMÉ</span>
+                    <h2>
+                        A closer look at my work.<br><em>Résumé coming soon.</em>
+                    </h2>
+                    <p>
+                        My updated résumé will be available here shortly. Until then, feel free to explore my projects and experience.
+                    </p>
+                    <span class="resume-status">PDF TO BE ADDED</span>
+                </div>
+                <div class="resume-paper" aria-hidden="true">
+                    <div class="paper-title">
+                        RAHUL C.
+                    </div>
+                    <div class="paper-row big">
+                    </div>
+                    <div class="paper-row">
+                    </div>
+                    <div class="paper-divider">
+                    </div>
+                    <div class="paper-row">
+                    </div>
+                    <div class="paper-row short">
+                    </div>
+                    <div class="paper-divider">
+                    </div>
+                    <div class="paper-row">
+                    </div>
+                </div>
+            </section>
+            <section class="section-block contact-section" id="contact">
+                <div class="contact-copy">
+                    <p class="section-kicker light">
+                        LET'S CONNECT
+                    </p>
+                    <h2>
+                        Have something<br>in mind?
+                    </h2>
+                    <p>
+                        Whether it's a software engineering opportunity, a collaboration, or a quick hello, I'd love to hear from you.
+                    </p>
+                    <a href="mailto:somra.rahul1204@gmail.com">
+                        somra.rahul1204@gmail.com
+                    </a>
+                    <a href="tel:+919694961245">
+                        +91 9694961245
+                    </a>
+                    <span>Jaipur, Rajasthan, India</span>
+                </div>
+                <form id="contactForm" class="contact-form" method="post" action="{{ url_for('contact') }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <div class="hidden-field" aria-hidden="true">
+                        <label for="website">
+                            Website
+                        </label>
+                        <input id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+                    <label>
+                        Name
+                        <input type="text" name="name" minlength="2" maxlength="80" placeholder="Your name" required>
+                    </label>
+                    <label>
+                        Email
+                        <input type="email" name="email" maxlength="254" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        Message<textarea name="message" minlength="10" maxlength="2000" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+                    </label>
+                    <button class="button-primary" type="submit">Send message</button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite">
+                    </p>
+                </form>
+            </section>
+        </main>
+        <footer class="site-footer">
+            © 2026 Rahul Choudhary <span>Made with curiosity in Jaipur.</span>
+        </footer>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
