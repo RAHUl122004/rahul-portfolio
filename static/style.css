@@ -1,17 +1,17 @@
 :root {
     color-scheme: dark;
-    --bg: #111017;
-    --bg-soft: #17161f;
-    --card: #1d1b27;
-    --card-raised: #24212e;
-    --line: #393442;
-    --line-soft: #302b39;
-    --white: #f9f2f4;
-    --text: #ded4dd;
-    --muted: #a99da9;
-    --accent: #f6c2ad;
-    --accent-soft: #dcabc7;
-    --accent-deep: #c58a9f;
+    --bg: #0d1117;
+    --bg-soft: #111821;
+    --card: #161b22;
+    --card-raised: #1b2531;
+    --line: #303b49;
+    --line-soft: #25303c;
+    --white: #f0f6fc;
+    --text: #c9d1d9;
+    --muted: #97a4b4;
+    --accent: #79b8ff;
+    --accent-soft: #9ac8ff;
+    --accent-deep: #79b8ff;
     --container: 1180px;
 }
 
@@ -27,7 +27,7 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: "Segoe UI", "Inter", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -38,8 +38,8 @@ body::before {
     inset: 0;
     z-index: -1;
     background:
-        radial-gradient(ellipse 720px 510px at 90% 4%, rgba(124, 65, 94, .13), transparent 75%),
-        radial-gradient(ellipse 780px 560px at -10% 53%, rgba(97, 72, 129, .08), transparent 70%);
+        radial-gradient(ellipse 720px 510px at 90% 4%, rgba(56, 107, 168, .10), transparent 75%),
+        radial-gradient(ellipse 780px 560px at -10% 53%, rgba(50, 86, 125, .06), transparent 70%);
     content: "";
     pointer-events: none;
 }
@@ -72,8 +72,8 @@ button, a, input, textarea, summary {
 }
 
 ::selection {
-    background: #f6c2ad;
-    color: #211821;
+    background: #79b8ff;
+    color: #09131f;
 }
 
 .container {
@@ -88,8 +88,8 @@ button, a, input, textarea, summary {
 .site-header {
     position: relative;
     z-index: 10;
-    border-bottom: 1px solid rgba(207, 177, 201, .1);
-    background: rgba(18, 16, 24, .98);
+    border-bottom: 1px solid rgba(138, 165, 190, .12);
+    background: rgba(13, 17, 23, .97);
 }
 
 .header-inner {
@@ -125,7 +125,7 @@ button, a, input, textarea, summary {
 .desktop-nav a {
     position: relative;
     padding-block: 30px;
-    color: #bcb0bd;
+    color: #9ba8b7;
     font-size: 13px;
     font-weight: 600;
     transition: color .2s ease;
@@ -155,9 +155,9 @@ button, a, input, textarea, summary {
 .header-contact {
     flex-shrink: 0;
     padding: 11px 18px;
-    border: 1px solid #5b4656;
+    border: 1px solid #3a4a5c;
     border-radius: 100px;
-    color: #eedde3;
+    color: #e6edf3;
     font-size: 13px;
     font-weight: 700;
     transition: background .2s, border-color .2s;
@@ -169,7 +169,7 @@ button, a, input, textarea, summary {
 }
 
 .header-contact:hover, .header-contact.active {
-    background: #322735;
+    background: #1b2e43;
     border-color: var(--accent-deep);
 }
 
@@ -196,7 +196,7 @@ button, a, input, textarea, summary {
     margin-right: 9px;
     border-radius: 50%;
     background: var(--accent);
-    box-shadow: 0 0 0 4px rgba(246, 194, 173, .11);
+    box-shadow: 0 0 0 4px rgba(121, 184, 255, .10);
     vertical-align: 1px;
 }
 
@@ -222,21 +222,21 @@ button, a, input, textarea, summary {
 
 .button-primary {
     background: var(--accent);
-    color: #231920;
+    color: #0b1623;
 }
 
 .button-primary:hover {
-    background: #ffd5c4;
+    background: #a8d4ff;
 }
 
 .button-outline {
-    border-color: #6b5267;
+    border-color: #425266;
     background: transparent;
     color: var(--white);
 }
 
 .button-outline:hover {
-    background: #2b2332;
+    background: #1a2736;
     border-color: var(--accent);
 }
 
@@ -259,17 +259,17 @@ button, a, input, textarea, summary {
     width: 43px;
     height: 43px;
     place-items: center;
-    border: 1px solid #615061;
+    border: 1px solid #344255;
     border-radius: 50%;
-    background: #25212f;
-    color: #f1d5d8;
+    background: #18212c;
+    color: #dce5ee;
     transition: background .2s, border-color .2s, transform .2s;
 }
 
 .socials a:hover {
     transform: translateY(-3px);
     border-color: var(--accent);
-    background: #423040;
+    background: #1e324a;
 }
 
 .socials svg {
@@ -358,7 +358,7 @@ button, a, input, textarea, summary {
     inset: 16px 0;
     z-index: -1;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(156, 93, 127, .25) 0%, rgba(102, 64, 119, .14) 42%, transparent 71%);
+    background: radial-gradient(circle, rgba(68, 115, 168, .16) 0%, rgba(46, 91, 135, .08) 42%, transparent 71%);
     content: "";
     filter: blur(6px);
 }
@@ -427,15 +427,15 @@ button, a, input, textarea, summary {
     min-width: 0;
     min-height: 275px;
     padding: 26px 28px;
-    border: 1px solid #403544;
-    border-radius: 15px;
-    background: linear-gradient(155deg, #211c2a, #1a1922);
+    border: 1px solid #354354;
+    border-radius: 12px;
+    background: linear-gradient(155deg, #192330, #141c27);
     transition: border-color .2s, transform .2s;
 }
 
 .highlight-card:hover {
     transform: translateY(-3px);
-    border-color: #976b8d;
+    border-color: #5384b7;
 }
 
 .highlight-card .card-kicker {
@@ -443,27 +443,27 @@ button, a, input, textarea, summary {
 }
 
 .highlight-feature {
-    background: linear-gradient(138deg, #392631, #231e2e 75%);
+    background: linear-gradient(138deg, #1c3047, #162233 75%);
 }
 
 .highlight-icon {
     position: absolute;
     top: 20px;
     right: 26px;
-    color: #e8b6b8;
+    color: #9ac8ff;
     font-size: 24px;
 }
 
 .highlight-feature h3 {
     margin-bottom: 13px;
-    color: #fcf0ef;
+    color: #f0f6fc;
     font-size: clamp(22px, 2.1vw, 30px);
 }
 
 .highlight-feature > p:not(.card-kicker) {
     max-width: 300px;
     margin-bottom: 17px;
-    color: #c7b9c8;
+    color: #b6c6d7;
     font-size: 12px;
     line-height: 1.8;
 }
@@ -500,7 +500,7 @@ button, a, input, textarea, summary {
 .card-rule {
     height: 1px;
     margin: 13px 0;
-    background: #403646;
+    background: #344254;
 }
 
 .assessment-line {
@@ -509,8 +509,8 @@ button, a, input, textarea, summary {
     justify-content: space-between;
     gap: 15px;
     padding: 8px 0 13px;
-    border-bottom: 1px solid #3b3443;
-    color: #cfbecd;
+    border-bottom: 1px solid #2c3846;
+    color: #afbecb;
     font-size: 12px;
 }
 
@@ -538,7 +538,7 @@ button, a, input, textarea, summary {
 
 .home-end p {
     margin: 0;
-    color: #c8bcc9;
+    color: #b8c4d0;
     font-size: 15px;
 }
 
@@ -588,12 +588,12 @@ button, a, input, textarea, summary {
     grid-template-columns: 1.2fr .8fr;
     gap: 24px;
     padding-top: 38px;
-    padding-bottom: 70px;
+    padding-bottom: 86px;
 }
 
 .story-panel, .info-card, .resume-text, .contact-details, .contact-form {
     border: 1px solid var(--line);
-    border-radius: 16px;
+    border-radius: 12px;
     background: var(--card);
 }
 
@@ -616,7 +616,7 @@ button, a, input, textarea, summary {
 
 .story-panel p, .resume-text > p, .contact-details > p {
     max-width: 620px;
-    color: #bcb0c0;
+    color: #adb9c6;
     font-size: 14px;
     line-height: 2;
 }
@@ -676,35 +676,13 @@ button, a, input, textarea, summary {
 
 .skill-list span, .resume-facts span {
     padding: 7px 11px;
-    border: 1px solid #514356;
+    border: 1px solid #354458;
     border-radius: 6px;
-    background: #292431;
-    color: #e4d4e3;
+    background: #1d2835;
+    color: #d5e1ed;
     font-size: 12px;
 }
 
-.page-bottom-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    margin-bottom: 80px;
-    padding: 30px 40px;
-    border: 1px solid #68465b;
-    border-radius: 14px;
-    background: linear-gradient(115deg, #34232f, #211d2b);
-}
-
-.page-bottom-banner .card-kicker {
-    margin-bottom: 8px;
-}
-
-.page-bottom-banner h2 {
-    max-width: 650px;
-    margin-bottom: 0;
-    color: var(--white);
-    font-size: clamp(23px, 2.65vw, 33px);
-}
 
 .project-list {
     display: grid;
@@ -721,13 +699,13 @@ button, a, input, textarea, summary {
     min-width: 0;
     padding: 22px;
     border: 1px solid var(--line);
-    border-radius: 16px;
+    border-radius: 12px;
     background: var(--card);
     transition: border-color .2s;
 }
 
 .project-card:hover {
-    border-color: #886783;
+    border-color: #5384b7;
 }
 
 .project-symbol {
@@ -737,17 +715,17 @@ button, a, input, textarea, summary {
     justify-content: center;
     flex-direction: column;
     gap: 13px;
-    border: 1px solid #5b4057;
+    border: 1px solid #334f6b;
     border-radius: 10px;
-    background: radial-gradient(circle at 40% 30%, #583447, #332a40 85%);
+    background: radial-gradient(circle at 40% 30%, #203a55, #14283d 85%);
 }
 
 .terminal-art .terminal-label {
     width: 65%;
     padding: 12px;
-    border: 1px solid #ac7c99;
+    border: 1px solid #416485;
     border-radius: 7px;
-    color: #ffd9cb;
+    color: #c6e1ff;
     font-family: Consolas, monospace;
     font-size: 16px;
 }
@@ -756,7 +734,7 @@ button, a, input, textarea, summary {
     width: 65%;
     height: 7px;
     border-radius: 4px;
-    background: #93667f;
+    background: #4c77a0;
 }
 
 .terminal-bars.short {
@@ -767,9 +745,9 @@ button, a, input, textarea, summary {
 .database-art span {
     width: 54%;
     padding: 9px 12px;
-    border: 1px solid #b28faa;
+    border: 1px solid #416485;
     border-radius: 6px;
-    color: #f4d0db;
+    color: #d8e8f7;
     font-family: Consolas, monospace;
     font-size: 12px;
     text-align: center;
@@ -781,14 +759,14 @@ button, a, input, textarea, summary {
 
 .website-dots {
     padding: 5px 13px;
-    background: #836075;
-    color: #e6bbd2;
+    background: #365977;
+    color: #b8d9fa;
     font-size: 10px;
 }
 
 .website-line {
     height: 10px;
-    background: #b18fa4;
+    background: #5481ae;
 }
 
 .website-line.short {
@@ -798,7 +776,7 @@ button, a, input, textarea, summary {
 
 .website-box {
     height: 43px;
-    border: 1px solid #b28faa;
+    border: 1px solid #416485;
 }
 
 .project-info {
@@ -825,10 +803,12 @@ button, a, input, textarea, summary {
     color: var(--accent);
     font-size: 13px;
     font-weight: 750;
+    text-underline-offset: 4px;
 }
 
-.text-link:hover, .footer-links a:hover {
-    color: #ffe0d2;
+.text-link:hover {
+    color: #b3dcff;
+    text-decoration: underline;
 }
 
 .experience-list {
@@ -859,6 +839,27 @@ button, a, input, textarea, summary {
     margin-bottom: 14px;
     color: var(--white);
     font-size: clamp(25px, 3vw, 35px);
+}
+
+.experience-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-bottom: 17px;
+}
+
+.experience-meta span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 5px 11px;
+    border: 1px solid #35495e;
+    border-radius: 6px;
+    background: #192735;
+    color: #b7d7fa;
+    font-size: 12px;
+    font-weight: 650;
+    line-height: 1.5;
 }
 
 .experience-content h2 span {
@@ -902,7 +903,7 @@ button, a, input, textarea, summary {
     width: fit-content;
     margin: 25px 0 14px;
     padding: 10px 14px;
-    border: 1px solid #7b5a6e;
+    border: 1px solid #365677;
     border-radius: 8px;
     color: var(--accent);
     font-size: 11px;
@@ -915,9 +916,9 @@ button, a, input, textarea, summary {
     min-height: 410px;
     place-items: center;
     overflow: hidden;
-    border: 1px solid #594457;
-    border-radius: 16px;
-    background: radial-gradient(circle, #5a3b51, #211d2c 75%);
+    border: 1px solid #36506d;
+    border-radius: 12px;
+    background: radial-gradient(circle, #203a54, #111c2b 75%);
 }
 
 .paper {
@@ -927,14 +928,14 @@ button, a, input, textarea, summary {
     flex-direction: column;
     gap: 15px;
     padding: 30px;
-    background: #f6f1f1;
-    box-shadow: 20px 20px 70px #0b0a12a1;
+    background: #f4f7fa;
+    box-shadow: 20px 20px 70px #070d15a1;
     transform: rotate(7deg);
 }
 
 .paper span {
     margin-bottom: 12px;
-    color: #39343c;
+    color: #263646;
     font-size: 17px;
     font-weight: 800;
     letter-spacing: -.06em;
@@ -944,7 +945,7 @@ button, a, input, textarea, summary {
     display: block;
     width: 100%;
     height: 7px;
-    background: #d7d3d7;
+    background: #cbd6e2;
 }
 
 .paper i:nth-child(3), .paper i:nth-child(7) {
@@ -954,7 +955,7 @@ button, a, input, textarea, summary {
 .paper b {
     display: block;
     height: 2px;
-    background: #aa93a8;
+    background: #8fa6bd;
 }
 
 .contact-layout {
@@ -1012,7 +1013,7 @@ button, a, input, textarea, summary {
 .field-row label {
     display: block;
     margin-bottom: 8px;
-    color: #e7dce5;
+    color: #d5dfe9;
     font-size: 12px;
     font-weight: 650;
 }
@@ -1021,10 +1022,10 @@ button, a, input, textarea, summary {
     display: block;
     width: 100%;
     padding: 13px 14px;
-    border: 1px solid #554758;
+    border: 1px solid #3b4a5c;
     border-radius: 8px;
     outline: none;
-    background: #15131c;
+    background: #0d141e;
     color: var(--white);
     font-size: 14px;
     transition: border-color .2s;
@@ -1040,7 +1041,7 @@ button, a, input, textarea, summary {
 }
 
 .field-row input::placeholder, .field-row textarea::placeholder {
-    color: #827888;
+    color: #8796a7;
 }
 
 .honey-field {
@@ -1069,16 +1070,16 @@ button, a, input, textarea, summary {
 }
 
 .form-success {
-    color: #92d4b1;
+    color: #78d4a1;
 }
 
 .form-error {
-    color: #f1a3a4;
+    color: #f0a2a2;
 }
 
 .site-footer {
     border-top: 1px solid var(--line-soft);
-    background: #100f16;
+    background: #0b1017;
 }
 
 .footer-inner {
@@ -1191,9 +1192,9 @@ button, a, input, textarea, summary {
         right: 0;
         width: min(260px, calc(100vw - 38px));
         padding: 9px;
-        border: 1px solid #655064;
+        border: 1px solid #405469;
         border-radius: 12px;
-        background: #23202c;
+        background: #182330;
         box-shadow: 0 19px 42px rgba(0, 0, 0, .35);
     }
 
@@ -1205,7 +1206,7 @@ button, a, input, textarea, summary {
     }
 
     .mobile-menu nav a:hover {
-        background: #393043;
+        background: #26394c;
     }
 
     .home-hero {
@@ -1360,15 +1361,10 @@ button, a, input, textarea, summary {
         gap: 15px;
     }
 
-    .page-bottom-banner {
-        display: block;
-        padding: 26px;
-        margin-bottom: 60px;
+    .inner-grid {
+        padding-bottom: 62px;
     }
 
-    .page-bottom-banner .button {
-        margin-top: 20px;
-    }
 
     .project-list {
         padding-top: 27px;
